@@ -61,7 +61,12 @@ const Root = StackNavigator(
   },
   {
     mode: 'modal',
-    headerMode: 'none',
+    navigationOptions: {
+      headerStyle: {
+        paddingHorizontal: 12,
+      },
+      headerTintColor: '#807F83',
+    },
   },
 )
 
