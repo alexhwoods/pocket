@@ -11,6 +11,7 @@ const Tabs = TabNavigator({
     screen: MyList,
     navigationOptions: {
       tabBarLabel: 'My List',
+      // eslint-disable-next-line react/prop-types
       tabBarIcon: ({ tintColor }) => (
         <Icon name="list" size={35} color={tintColor} />
       ),
@@ -20,6 +21,7 @@ const Tabs = TabNavigator({
     screen: Todo,
     navigationOptions: {
       tabBarLabel: 'Recommended',
+      // eslint-disable-next-line react/prop-types
       tabBarIcon: ({ tintColor }) => (
         <MaterialCommunityIcons
           name="heart-box"
@@ -34,6 +36,7 @@ const Tabs = TabNavigator({
     screen: Todo,
     navigationOptions: {
       tabBarLabel: 'Notifications',
+      // eslint-disable-next-line react/prop-types
       tabBarIcon: ({ tintColor }) => (
         <FontAwesome name="bell" size={27} color={tintColor} />
       ),
@@ -43,6 +46,7 @@ const Tabs = TabNavigator({
     screen: Todo,
     navigationOptions: {
       tabBarLabel: 'Profile',
+      // eslint-disable-next-line react/prop-types
       tabBarIcon: ({ tintColor }) => (
         <Icon name="account-circle" size={35} color={tintColor} />
       ),
