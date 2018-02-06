@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { View, FlatList } from 'react-native'
 import { Octicons, MaterialIcons } from 'react-native-vector-icons'
 
+import { gray, iconSize } from '../../services/styles'
 import Article from './components/Article'
 
 const articles = [
@@ -9,16 +10,11 @@ const articles = [
   { title: 'How to do thing', url: 'wwwwkawjd;fasdf;' },
 ]
 
-const iconSize = 25
-const iconColor = '#807F83'
-
 class MyList extends Component {
   static navigationOptions = {
     title: 'My List',
-    headerLeft: <Octicons color={iconColor} name="settings" size={iconSize} />,
-    headerRight: (
-      <MaterialIcons color={iconColor} name="search" size={iconSize} />
-    ),
+    headerLeft: <Octicons color={gray} name="settings" size={iconSize} />,
+    headerRight: <MaterialIcons color={gray} name="search" size={iconSize} />,
   }
 
   renderItem = ({ item }) => <Article {...item} />
