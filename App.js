@@ -5,6 +5,7 @@ import { MaterialCommunityIcons, FontAwesome } from 'react-native-vector-icons'
 
 import MyList from './app/screens/MyList'
 import Todo from './app/screens/Todo'
+import Settings from './app/screens/Settings'
 
 const Tabs = TabNavigator({
   MyList: {
@@ -60,7 +61,7 @@ const Root = StackNavigator(
       screen: Tabs,
     },
     Settings: {
-      screen: Todo,
+      screen: Settings,
     },
   },
   {

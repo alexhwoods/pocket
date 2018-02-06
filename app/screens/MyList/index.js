@@ -11,11 +11,18 @@ const articles = [
 ]
 
 class MyList extends Component {
-  static navigationOptions = {
+  static navigationOptions = ({ navigation: { navigate } }) => ({
     title: 'My List',
-    headerLeft: <Octicons color={gray} name="settings" size={iconSize} />,
+    headerLeft: (
+      <Octicons
+        color={gray}
+        name="settings"
+        onPress={() => navigate('Settings')}
+        size={iconSize}
+      />
+    ),
     headerRight: <MaterialIcons color={gray} name="search" size={iconSize} />,
-  }
+  })
 
   renderItem = ({ item }) => <Article {...item} />
   renderSeparator = () => (
